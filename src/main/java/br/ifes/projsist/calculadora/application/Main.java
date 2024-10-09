@@ -22,7 +22,7 @@ public class Main {
         } catch (OperacaoInvalidaException | DivisaoPorZeroException | CalculadoraInvalidaException e) {
             System.out.println(e.getMessage());
         } catch (Exception e) {
-            System.out.println("Rapaz.. reinicia o computador e vê se funciona " + Arrays.toString(e.getSuppressed()) + e.getClass() + e.getMessage());
+            System.out.println("Rapaz.. reinicia o computador e vê se funciona.");
         }
     }
 }
