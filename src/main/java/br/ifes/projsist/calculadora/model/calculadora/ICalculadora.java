@@ -6,7 +6,6 @@ import br.ifes.projsist.calculadora.model.exception.DivisaoPorZeroException;
 import br.ifes.projsist.calculadora.model.exception.OperacaoInvalidaException;
 
 import java.util.Map;
-import java.util.Set;
 
 public interface ICalculadora {
     ResponseOperacaoDTO calcular(RequestOperacaoDTO requestDTO) throws OperacaoInvalidaException, DivisaoPorZeroException;

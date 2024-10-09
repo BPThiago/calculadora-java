@@ -7,7 +7,6 @@ import br.ifes.projsist.calculadora.model.exception.DivisaoPorZeroException;
 import br.ifes.projsist.calculadora.model.exception.OperacaoInvalidaException;
 import br.ifes.projsist.calculadora.model.loader.CalculadoraLoader;
 import br.ifes.projsist.calculadora.model.loader.ILoader;
-import br.ifes.projsist.calculadora.model.loader.OperacaoLoader;
 import br.ifes.projsist.calculadora.model.operacao.IOperacao;
 
 import java.util.HashMap;
