@@ -23,4 +23,9 @@ public class ControllerCalculadora {
     public Map<String, String> getOperacoesDisponiveis() {
         return this.calc.getOperacoesDisponiveis();
     }
+
+    public static Map<String, String> getCalculadorasDisponiveis() {
+        Map<String, String> calculadorasMap = AbstractCalculadora.getCalculadorasDisponiveis();
+        return calculadorasMap;
+    }
 }

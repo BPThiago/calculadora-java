@@ -4,7 +4,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 import br.ifes.projsist.calculadora.controller.ControllerCalculadora;
-import br.ifes.projsist.calculadora.model.calculadora.AbstractCalculadora;
 import br.ifes.projsist.calculadora.model.dto.RequestCalculadoraDTO;
 import br.ifes.projsist.calculadora.model.dto.RequestOperacaoDTO;
 import br.ifes.projsist.calculadora.model.dto.ResponseOperacaoDTO;
@@ -15,10 +14,10 @@ public class Menu {
 
         System.out.println("Escolha a calculadora que deseja usar:");
 
-        Map<String, String> calcs = AbstractCalculadora.getCalculadorasDisponiveis();
+        Map<String, String> calculadorasMap = ControllerCalculadora.getCalculadorasDisponiveis();
 
-        for (String cod : calcs.keySet())
-            System.out.println("(" + cod + ") " + calcs.get(cod));
+        for (String cod : calculadorasMap.keySet())
+            System.out.println("(" + cod + ") " + calculadorasMap.get(cod));
 
         System.out.print("Escolha: ");
         return new RequestCalculadoraDTO(s.next());
